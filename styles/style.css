@@ -1,0 +1,171 @@
+/*html {
+  background-image: url(/assets/images/landscape-yard.jpeg);
+  background-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+size: cover;
+
+}*/
+html {
+  background: url(/assets/images/landscape-yard.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+.block1 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+.left {
+  float: left;
+  margin: 1%;
+  color: #fff;
+}
+.right {
+  float: right;
+  display: flex;
+  clear: none;
+  color: #fff;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*body #background {
+  background-image: url(/assets/images/bubbles-light.jpeg);
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}*/
+
+header {
+  height: 100vh;
+  background-size: cover;
+  color: #000;
+  font-family: "Liberation Mono";
+}
+
+.navbar {
+  position: static;
+  padding: 0.01em;
+  background: rgba(162, 223, 159, .55);
+  z-index: 1;
+}
+
+.navbar p {
+  font-size: 25px;
+  color: black;
+  font-weight: 800;
+  font-family: sans-serif;;
+}
+.navbar .links-container {
+  display: table;
+  position: absolute;;
+  top: 0;
+  right: 0;
+  height: 100px;
+  link-color: white;
+  padding-right: 5%;
+  padding-top: 19px;
+  text-decoration: none;
+  font-family: monospace;;
+  font-size: 20px;
+}
+
+.header-content {
+  background-image: url(/assets/images/landscape-yard.jpeg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+div.container {
+  max-width: 960px;
+  padding: 0px 0;
+  margin: 0px;
+}
+
+.header-sticky {
+  height: 80px;
+  width: 100%;
+  z-index: 1;
+  position: ;
+  color: blue;
+  background: #fff;
+}
+
+.diamond {
+  position: relative;
+  height: 150px;
+  width: 100px;
+  margin-left: 50px;
+  background-color: rgba(162, 223, 159, .55);
+  transform: rotate(45deg);
+  /*perfect diamond/shape border*/
+  padding-left: 2%;
+  border: 1px;
+  /*hole punch effect*/
+  color: yellow;
+}
+.diamond h1 {
+  color: black;
+}
+.selling-points {
+  position: relative;
+
+}
+
+.columns {
+  position: static;
+  display: flex;
+  margin: 10%;
+  color: black;
+  border: black;
+  border-width: thin;
+
+}
+
+.c-title .c-title{
+  float: left;
+}
+
+.c-text {
+  padding: 2%
+  clear: both;
+
+}
+
+.block-header {
+  color: white;
+  text-weight: thick;
+  float: flex;
+  margin-left: 50%;
+}
+
+.column-s {
+ position: relative;
+ width: 100%; /* for IE 6 */
+}
+
+
+h2 span {
+ color: white;
+ font: bold 24px/45px Helvetica, Sans-Serif;
+ letter-spacing: -1px;
+ background: rgb(0, 0, 0); /* fallback color */
+ background: rgba(0, 0, 0, 0.7);
+ padding: 10px;
+}
+h2 span.spacer {
+  padding:0 23px;
+}
