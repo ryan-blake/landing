@@ -26,10 +26,10 @@ var waypoint3 = $('.bottom').waypoint({
     if (direction === 'down') {
       $('.bottom').addClass('animated fadeInUp');
     }
-    else {
-      $('.bottom').removeClass('animated fadeInUp');
-    }
-  	// $(this).toggleClass($(this).data('animated'));
+    //  remove else to allow class to stay on page
+    // else {
+    //   $('.bottom').removeClass('animated fadeInUp');
+    // }
   },
   offset: '20%'
 })
