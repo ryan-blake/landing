@@ -1,18 +1,19 @@
 
 $(document).ready(function() {
 // box and inside text below header fade out left
-var waypoint4 = $('.center').waypoint({
-    handler: function(direction) {
-      if (direction === 'down') {
-        $('.center').addClass('animated fadeOutLeftBig');
-      }
-      //  remove else to allow class to stay on page
-      else {
-        $('.center').removeClass('animated fadeOutLeftBig');
-      }
-    },
-    offset: '18%'
-  })
+// var waypoint4 = $('.center').waypoint({
+//     handler: function(direction) {
+//       if (direction === 'down') {
+//         $('.center').addClass('animated fadeOutLeftBig');
+//       }
+//       //  remove else to allow class to stay on page
+//       else {
+//         $('.center').removeClass('animated fadeOutLeftBig');
+//       }
+//     },
+//     offset: '18%'
+//   })
+
   var waypoint4 = $('.diamond').waypoint({
     handler: function(direction) {
       if (direction === 'down') {
@@ -27,20 +28,20 @@ var waypoint4 = $('.center').waypoint({
 })
 
 // first block image fadeIn
-var waypoint2 = $('.top').waypoint({
-  handler: function(direction) {
-    if (direction === 'down') {
-      $('.top').addClass('animated flip');
-    }
-    else {
-      $('.top').removeClass('animated flip');
-    }
-  },
-  offset: '40%'
-})
-// second block image fadeInUp and text inside
-  $('.bottom').css('opacity', 0);
+// var waypoint2 = $('#image-box-top').waypoint({
+//   handler: function(direction) {
+//     if (direction === 'down') {
+//       $('#image-box-top').addClass('animated bounce');
+//     }
+//     else {
+//       $('#image-box-top').removeClass('animated bounce');
+//     }
+//   },
+//   offset: '40%'
+// })
 
+// second block image fadeInUp and text inside
+$('.bottom').css('opacity', 0);
 var waypoint3 = $('.bottom').waypoint({
   handler: function(direction) {
     if (direction === 'down') {
@@ -54,6 +55,21 @@ var waypoint3 = $('.bottom').waypoint({
   offset: '25%'
 })
 
+$('.text-span').css('opacity', 0);
+var waypoint3 = $('.text-span').waypoint({
+  handler: function(direction) {
+    if (direction === 'down') {
+      $('.text-span').addClass('animated fadeInUp');
+    }
+    else {
+      $('.text-span').removeClass('animated fadeInUp');
+    }
+  },
+  offset: '25%'
+})
+
+
+// text in second block.
 $('.bottomText').css('opacity', 0);
 var waypoint4 = $('.bottomText').waypoint({
   handler: function(direction) {
@@ -65,7 +81,7 @@ var waypoint4 = $('.bottomText').waypoint({
     //   $('.bottom').removeClass('animated fadeInUp');
     // }
   },
-  offset: '48%'
+  offset: '45%'
 })
 
 });

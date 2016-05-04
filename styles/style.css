@@ -7,20 +7,17 @@ size: cover;
 
 }*/
 html {
-  background: url(/assets/images/landscape-yard.jpeg) no-repeat center center fixed;
+  background-image: url("../assets/images/landscape-yard.jpeg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -o-background-size:  cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: 0;
+  margin-top:70px;
+  height: 100%;
   }
 
-.block1 {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  }
 
 .left {
   float: left;
@@ -38,39 +35,33 @@ body {
   padding: 0;
 }
 
-header{
+header {
   position: fixed;
+  top:0; left: 0;
   width: 100%;
   text-align: left;
-  font-size: 72px;
-  line-height: 60px;
-  height: 90px;
-  background: #335C7D;
-  color: #fff;
+  font-size: 40px;  line-height: 30px;
+  height: 50px;
+  background: #c0c339;
   font-family: 'PT Sans', sans-serif;
-  transition: all 0.4s ease;
+  transition: all 0.1s ease-in;
   z-index: 2;
-
+  padding-bottom: 30px;
 }
 
 header, h3 {
-padding-bottom: 70px;
-margin-right: 10px;
-
+top: 0;
+color: black;
+padding-bottom: 38px;
 }
 
-
-.navbar {
-  position: static;
-  background: rgba(162, 223, 159, .55);
-  z-index: 1;
-}
-
-.navbar p {
+header .navbar-link {
   font-size: 25px;
   font-weight: 800;
-  font-family: sans-serif;;
+  font-family: sans-serif;
+  padding: 3%;
 }
+
 .navbar .links-container {
   display: table;
   position: fixed;
@@ -85,31 +76,11 @@ margin-right: 10px;
   font-size: 20px;
 }
 
-.links-container ol {
+/*.links-container ol {
   display: block;
   float: left;
   clear: none;
-}
-
-.header-title {
-  margin-bottom: 5%;
-  color: yellow;
-}
-.header-content {
-  background-image: url(/assets/images/landscape-yard.jpeg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  text-align: center;
-}
-
-div.container {
-  max-width: 960px;
-  padding: 0px 0;
-  margin: 0px;
-}
+}*/
 
 header.sticky {
   font-size: 24px;
@@ -118,40 +89,59 @@ header.sticky {
   background: #efc47D;
   text-align: left;
   padding-left: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
+header.sticky h3 {
+  color:white;
+  transition: 0.7s;
+}
+
 
 .diamond {
   position: relative;
   background-color: rgba(162, 223, 159, .85);
   height: 150px;
-  width: 190px;
+  width: 210px;
   margin-left: 40%;
-  margin-top: 30%;
+  margin-top: 300px;
+  margin-bottom: 100px;
   border: 1px;
-  /*hole punch effect*/
-  color: yellow;
 }
+a {
+  text-decoration: none;
+}
+
+
+
 .diamond h1 {
   color: black;
+}
+
+.center {
 }
 
 .links-container .navbar-link {
 display: table-cell;
 position: relative;
 height: 100%;
-padding-left: 1rem;
-padding-right: 1rem;
-/* #4 */
+padding-left: 0rem;
+padding-right: 2rem;
 vertical-align: middle;
 color: yellow;
 font-size: 0.625rem;
 letter-spacing: 0.05rem;
 font-weight: 700;
 text-transform: uppercase;
-/* #3 */
 text-decoration: none;
 cursor: pointer;
+}
+
+.links-container .navbar-link:hover {
+ color: rgb(233,50,117);
+}
+
+.links-container .navbar-link:active {
+ background-color: white;
 }
 
 
@@ -161,82 +151,115 @@ li {
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-font-weight:lighter;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight:lighter;
 }
+
 /*columnize*/
 
-.links-container .navbar-link:hover {
-color: rgb(233,50,117);
-}
-
-.links-container .navbar-link:active {
-background-color: white;
-}
 
 .container {
-    margin: 0 auto;
-    max-width: 34rem;
+  margin: 0 auto;
+  max-width: 34rem;
 }
 
 .container.narrow {
-    max-width: 56rem;
+  max-width: 56rem;
 }
 
 .column {
-      float: left;
-      padding-left: 1rem;
-      padding-right: 1rem;
-  }
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
-     .column.full { width: 100%; }
-     .column.two-thirds { width: 66.7%; }
-     .column.half { width: 50%; }
-     .column.third { width: 33.3%; }
-     .column.fourth { width: 25%; }
-     .column.flow-opposite { float: right; }
+.column.full { width: 100%; }
+.column.two-thirds { width: 66.7%; }
+.column.half { width: 50%; }
+.column.third { width: 33.3%; }
+.column.fourth { width: 25%; }
+.column.flow-opposite { float: right; }
 
 
 /*image blocks*/
-.column-s {
- position: static;
- min-width: 100%;
-}
+
 .image {
    position: relative;
    width: 100%; /* for IE 6 */
 }
 
-h2 {
-   position: absolute;
-   top: 200px;
-   left: 0;
-   width: 100%;
+.icon {
+  display:flex;
+  align-items: center;
+  font-size: 42px;
+  padding: 25%;
+
 }
 
-/*two lines of text white font black BG*/
-h2 span {
-   color: white;
-   font: bold 24px/45px Helvetica, Sans-Serif;
-   letter-spacing: -1px;
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
-   padding: 10px;
+h2 {
+   align-items: center;
+   color: black;
+   align-items: center;
+
 }
-h2 span.spacer {
-   padding:0 15px;
-   color:inherit;
+
+#image-box-top {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-image: url("../assets/images/green-fade-background.jpg");
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: "FlipH";
+  /*flip horiz*/
+  -moz-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+filter: fliph; /*IE*/
+
+}
+
+#image-box {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-image: url("../assets/images/Black-Background.jpg");
+}
+
+#text-span {
+  color: lightgrey;
+
+}
+
+
+.flip-horizontal {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: fliph; /*IE*/
+}
+.flip-vertical {
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: flipv; /*IE*/
 }
 
 /* Medium screens(640px) */
-@media (min-width: 640px) {
+@media (max-width: 640px) {
   html { font-size: 112%; }
 }
-
 
 /* Large screens (1024px) */
 @media (min-width: 1024px) {
