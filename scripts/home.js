@@ -11,8 +11,8 @@ $(document).ready(function() {
 $( center ).click(function( event ) {
     event.preventDefault();
     $( this ).hide( "slow" );
-
 });
+// keep full size background after click.
 
 $(window).scroll(function() {
 if ($(this).scrollTop() > 1){
