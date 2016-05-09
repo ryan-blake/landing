@@ -30,6 +30,10 @@ header, h3 {
   padding-bottom: 3px;
 }
 
+.title {
+  margin-left: 10px;
+}
+
 a.navbar-link {
   font-size: 55px;
   font-weight: 800;
@@ -79,7 +83,7 @@ header.sticky h3 {
 
 .diamond {
   position: absolute;
-  top: 100px;
+  top: 180px;
   left: calc(50% - 170px);
   /*left: 300px;*/
   background-color: rgba(162, 223, 159, .5);
@@ -262,7 +266,7 @@ position: relative;
 }
 
 /* Medium screens(640px) */
-@media (max-width: 540px) {
+@media (max-width: 640px) {
   .diamond { margin-left: 5%;
     margin-right: 5%;
    }
@@ -270,7 +274,9 @@ position: relative;
      display: flex;
      vertical-align: middle;
     font-size: 20px;
-
+   }
+   #image-box-top {
+     margin-top: 450px;
    }
 
   .column {
