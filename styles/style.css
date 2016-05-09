@@ -6,7 +6,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
-  margin-top: 50px;
+  margin-top: 60px;
   height: 450px;
   }
 
@@ -34,6 +34,7 @@ header, h3 {
   margin-left: 10px;
 }
 
+
 a.navbar-link {
   font-size: 55px;
   font-weight: 800;
@@ -52,7 +53,7 @@ a.navbar-link {
   padding-right: 5%;
   padding-top: 8px;
   text-decoration: none;
-  font-family: monospace;;
+  font-family: monospace;
 }
 
 header.sticky {
@@ -80,6 +81,17 @@ header.sticky h3 {
   font-size: 15px;
   border-bottom: 10px;
 }
+.about-title {
+  position: absolute;
+  left: 25px;
+  padding-top: 0;
+  margin-top: 15px;
+}
+
+#signup {
+  padding-top:0;
+}
+
 
 .diamond {
   position: absolute;
@@ -99,13 +111,12 @@ header.sticky h3 {
 }
 
 .diamond-2 {
-  position: relative;
+  position: absolute;
+  top: 180px;
+  left: calc(50% - 480px);
   background-color: rgba(162, 223, 159, .85);
   height: 190px;
   width: 480px;
-  margin-left: 40%;
-  margin-top: 300px;
-  margin-bottom: 240px;
   border: 1px;
 }
 
@@ -142,7 +153,6 @@ cursor: pointer;
 padding-top: 7%;
 }
 
-
 .links-container .navbar-link:hover {
  color: rgb(233,50,117);
 }
@@ -153,13 +163,13 @@ padding-top: 7%;
 
 a {
   text-decoration: none;
-
 }
 
 li {
   position: middle;
   float: right;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+
 }
 
 li a {
@@ -203,9 +213,16 @@ h2 {
 
 }
 
+
+ #signup{
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
 #image-box-top {
-  height: 500px;
-  margin-top: 500px;
+  height: 400px;
+  margin-top: 452px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -221,6 +238,7 @@ h2 {
   background-size: cover;
   background-image: url("../assets/images/Black-Background.jpg");
 }
+
 /*
 #text-span  .icon {
   /*display:flex;
@@ -277,6 +295,7 @@ position: relative;
    }
    #image-box-top {
      margin-top: 450px;
+     height: 550px;
    }
 
   .column {
